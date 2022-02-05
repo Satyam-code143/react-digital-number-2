@@ -1,0 +1,53 @@
+{
+  "name": "@satyam-code143/react-digital-number",
+  "version": "1.0.0",
+  "description": "A package for react that provides digital numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy",
+    "publish-prod": "npm run transpile && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam-code143/react-digital-number-2.git"
+  },
+  "keywords": [
+    "react-digital-number",
+    "digital-number",
+    "digital",
+    "number"
+  ],
+  "author": "Satyam Dodmani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyam-code143/-satyam-code143-react-digital-number/issues"
+  },
+  "homepage": "https://github.com/Satyam-code143/-satyam-code143-react-digital-number#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "react-spring": "^9.4.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
